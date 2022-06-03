@@ -723,22 +723,22 @@ class Snmp_server(ConfigBase):
                                     )
 
                                     if "authentication" in key:
-                                        build_child_xml_node(
-                                            sub_node,
-                                            "authentication-key",
-                                            sub_dict["key"],
-                                        )
+                                    #    build_child_xml_node(
+                                    #        sub_node,
+                                    #        "authentication-key",
+                                    #        sub_dict["key"],
+                                    #    )
                                         build_child_xml_node(
                                             sub_node,
                                             "authentication-password",
                                             sub_dict["password"],
                                         )
                                     else:
-                                        build_child_xml_node(
-                                            sub_node,
-                                            "privacy-key",
-                                            sub_dict["key"],
-                                        )
+                                    #    build_child_xml_node(
+                                    #        sub_node,
+                                    #        "privacy-key",
+                                    #        sub_dict["key"],
+                                    #    )
                                         build_child_xml_node(
                                             sub_node,
                                             "privacy-password",
